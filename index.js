@@ -36,6 +36,12 @@ class Passenger{
     })
   }
   
+  drivers(){
+    return this.trips().filter(trip => {
+      return trip.driver()
+    })
+  }
+  
 }
 
 class Trip{
